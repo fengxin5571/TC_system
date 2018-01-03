@@ -226,7 +226,8 @@ $(function(){
                 }
                 break;
             case '2':
-                echo ' href="' . urlShop('article', 'article',array('ac_id'=>$nav['item_id'])) . '"';
+               // echo ' href="' . urlShop('article', 'article',array('ac_id'=>$nav['item_id'])) . '"';
+                echo 'href="/cms"';
                 if (isset($_GET['ac_id']) && $_GET['ac_id'] == $nav['item_id']) {
                     echo ' class="current"';
                 }

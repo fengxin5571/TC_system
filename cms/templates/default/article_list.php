@@ -61,7 +61,8 @@ s
                 <?php echo loadadv(1056);?>
             </div>
             <div class="weixin_account">
-                <div class="weixin_orange"></div>
+            <?php echo loadadv(1066);?>
+               <!--  <div class="weixin_orange"></div>
                 <div class="weixin_title">
                     <p></p>
                     <h1>微信公众号</h1>
@@ -127,7 +128,7 @@ s
                             <p>独一张</p>
                         </div>
                     </li>
-                </ul>
+                </ul> -->
             </div>
         </div>
     </div>

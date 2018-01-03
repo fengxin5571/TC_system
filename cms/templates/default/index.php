@@ -330,7 +330,8 @@ if(is_file($index_file)) {
                 <?php echo loadadv(1056);?>
             </div>
             <div class="weixin_account">
-                <div class="weixin_orange"></div>
+            <?php echo loadadv(1066);?>
+                <!-- <div class="weixin_orange"></div>
                 <div class="weixin_title">
                     <p></p>
                     <h1>微信公众号</h1>
@@ -396,7 +397,7 @@ if(is_file($index_file)) {
                             <p>独一张</p>
                         </div>
                     </li>
-                </ul>
+                </ul> -->
             </div>
         </section>
     </div>

@@ -1,6 +1,6 @@
 <header id="head_zn">
     <div id="head_box_zn">
-        <a href="<?php  echo urlShop("index","groupindex")?>" class="login_zn">
+        <a href="<?php  echo urlShop("index","selfindex")?>" class="login_zn">
             <?php if(empty($output['setting_config']['cms_logo'])) { ?>
           <img src="<?php echo UPLOAD_SITE_URL.DS.ATTACH_CMS.DS.'cms_default_logo.png';?>">
           <?php } else { ?>
