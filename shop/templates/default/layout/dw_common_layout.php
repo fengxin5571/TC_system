@@ -192,10 +192,10 @@ $(function(){
 </div>
 
 <!-- 顶部广告展开效果-->
-<div class="wrapper" id="top-banner">
-<a href="javascript:void(0);" title="关闭"></a>
-<?php echo loadadv(1047);?>
-</div>
+<!-- <div class="wrapper" id="top-banner"> -->
+<!-- <a href="javascript:void(0);" title="关闭"></a> -->
+ <?php //echo loadadv(1047);?>
+<!-- </div> -->
 <!-- 顶部广告展开效果-->
 
 <div class="nav_yyt">

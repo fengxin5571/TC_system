@@ -132,17 +132,13 @@ class indexControl extends BaseHomeControl{ //父类定义了公共头部，以�
         /*
          * 健康知识
          */
-        $article_model=Model('article');
-        $article_class_model = Model('article_tag');
-        $article_class=$article_class_model->getList("",0,"","*","5");
-        if($article_class){
-            $condition=array();
-            $condition['table'] = "article_tag,article";
-            $condition['join_on'] = array('article_tag.tag_id=article.tag_id');
-            $condition['article_recommend']=1;
-            $condition['order']="article_id desc";
-            $article_list=$article_model->getJoinList($condition);
-        }
+        
+        $cms_tag_model=Model("cms_tag");
+        $cms_tags=$cms_tag_model->getList("",0,"","*","5");
+        $cms_article_mode=Model("cms_article");
+         foreach ($cms_tags as $tag){
+             $cms_article_list[$tag['tag_id']]=$cms_article_mode->getListByTagID(array("article_tag"=>$tag['tag_id']),0,"","*","4");
+         }
         /*
          *  健康问答
          */
@@ -176,8 +172,8 @@ class indexControl extends BaseHomeControl{ //父类定义了公共头部，以�
         }
         Tpl::output("question_list",$question_list);
         Tpl::output("member_advisor_wd_list",$member_advisor_wd_list);
-        Tpl::output("article_class",$article_class);
-        Tpl::output("article_list",$article_list);
+        Tpl::output("article_class",$cms_tags);
+        Tpl::output("article_list",$cms_article_list);
         Tpl::output('goods_list',$goods_list);
         Tpl::output('member_advisor_list',$member_advisor_list);
         Tpl::output("video_list",$video_list);

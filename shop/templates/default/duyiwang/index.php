@@ -113,12 +113,8 @@ body{background-color: #f8f8f8; }
                 <li class="health_a_yyt">
                     <div class="health_title_yyt"><?php echo str_cut($article_class['tag_name'], 4)?></div>
                     <ul class="health_list_yyt">
-                         <?php $num=0;?>
-                         <?php foreach ($output['article_list'] as $article) {?>
-                         <?php if($article['tag_id'] == $article_class['tag_id']&&$num<4) {?>
-                         <li class="health_one_yyt"><a href="<?php echo urlShop("article","show",array('article_id'=>$article['article_id'],'childshow'=>1))?>"><?php echo str_cut($article['article_title'], 28)?></a></li>
-                         <?php $num++;?>
-                         <?php }?>
+                         <?php foreach ($output['article_list'][$article_class['tag_id']] as $article) {?>
+                         <li class="health_one_yyt"><a href="<?php echo  urlCMS("article","article_detail",array("article_id"=>$article['article_id']))?>"><?php echo str_cut($article['article_title'], 28)?></a></li>
                          <?php }?>
                     </ul>
                 </li>

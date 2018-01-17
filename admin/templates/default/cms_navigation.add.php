@@ -71,6 +71,7 @@ $(document).ready(function(){
           <td class="vatop rowform"><input type="text" value="" name="navigation_title" id="navigation_title" class="txt"></td>
           <td class="vatop tips"><?php echo $lang['navigation_title_error'];?></td>
         </tr>
+        
         <tr class="noborder">
           <td colspan="2" class="required"><label class="validation" for="navigation_link"><?php echo $lang['cms_navigation_url'];?><?php echo $lang['nc_colon'];?></label></td>
         </tr>
