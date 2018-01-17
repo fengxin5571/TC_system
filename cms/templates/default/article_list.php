@@ -1,7 +1,7 @@
 <?php defined('InShopNC') or exit('Access Invalid!');?>
  <link rel="stylesheet" href="<?php echo CMS_TEMPLATES_URL;?>/css/cms/news_list_sxy.css">
  <script src="<?php echo RESOURCE_SITE_URL;?>/js/cms/cms_jquery.pagination.js"></script>
-s
+
 
 <!--中间内容部分--> 
 <section class="sxy_content">
@@ -9,7 +9,7 @@ s
         <div id="news_left">
             <!--标题--> 
             <div class="jump_title">
-                <p><a href="<?php echo urlShop('index','groupindex')?>">首页</a></p>
+                <p><a href="<?php echo urlShop('index','selfindex')?>">首页</a></p>
                 <img src="<?php echo CMS_TEMPLATES_URL.DS.'images/cms/news_list_03.png';?>" alt="">
                 <p><a href="<?php echo urlCMS('index','index')?>">健康云</a></p>
                 <img src="<?php echo CMS_TEMPLATES_URL.DS.'images/cms/news_list_03.png';?>" alt="">

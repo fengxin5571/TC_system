@@ -17,6 +17,7 @@ $(function(){
 				var data = result.datas;				
 				$.each(data,function(k,v){
 					if(k=="video"){
+						
 						var html = template.render('video', v);
 						$("#video_show").html(html);
 						$("title").html(v.video_title);
