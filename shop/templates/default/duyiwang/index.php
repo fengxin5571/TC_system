@@ -267,7 +267,7 @@ body{background-color: #f8f8f8; }
 
 
 
-<div class="goods_for">
+<!-- <div class="goods_for">
     <div class="health_title_zn">
         <p class="health_title">
             <span></span>
@@ -294,7 +294,7 @@ body{background-color: #f8f8f8; }
     </ul>
     <div class="goods_forMore"><a href="<?php echo urlShop("index","index")?>" style="color:#fff">更多</a></div>
     <div class="goods_forME">TRADITIONAL NOURISHING</div>
-</div>
+</div> -->
 
 <!--左边固定弹框开始-->
 <style>

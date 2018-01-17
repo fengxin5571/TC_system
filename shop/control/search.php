@@ -163,7 +163,7 @@ class searchControl extends BaseHomeControl {
         $new_goods_list=array();
         
         foreach ($goods_list as $k=>$goods){
-            if($goods['gc_id_1']=="1057"||$goods['gc_id_1']=="1066"||$goods['gc_id_1']=="1067"||$goods['gc_id_1']=="1068"){
+            if($goods['gc_id_1']=="1057"||$goods['gc_id_1']=="1066"||$goods['gc_id_1']=="1067"||$goods['gc_id_1']=="1068"||$goods['gc_id_1']=="1189"){
                 if($goods[is_own_shop]==1){
                     $new_goods_list[$k]=$goods;
                 }

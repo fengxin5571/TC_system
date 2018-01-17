@@ -121,18 +121,19 @@
     </style>
 </head>
 <body>
-<div class="header_box" id="video_show">    	</div> 
-<script type="text/javascript" src="//player.youku.com/jsapi"></script>
+<div class="header_box" id="video_show" >    	</div> 
+<script type="text/javascript" src="../js/ckplayer/ckplayer.js"></script>
 <script type="text/html" id="video">
-	
-    <script type="text/javascript">
-    var player = new YKU.Player('video_show',{
-    styleid: '0',
-    client_id: 'cd87e08045473b0a',
-    vid: '<%=video_content%>',
-    newPlayer: true
-    });
+	<script type="text/javascript">
+    var videoObject = {
+        container: '#video_show',//“#”代表容器的ID，“.”或“”代表容器的class
+        variable: 'player',//该属性必需设置，值等于下面的new chplayer()的对象
+        flashplayer:false,//如果强制使用flashplayer则设置成true
+        video:'http://www.duyiwang.cn/data/upload/video/<%=video_ad_url%>'//视频地址
+    };
+    var player=new ckplayer(videoObject);
     </script>
+    
 </script>
 <div class="video_intro_zn">
     <p class="video_title">简介</p>
@@ -161,7 +162,6 @@
 <script type="text/javascript" src="../js/template.js"></script>
 <script type="text/javascript" src="../js/common.js"></script>
 <script type="text/javascript" src="../js/tmpl/video_show.js"></script>
-<script type="text/javascript" src="//player.youku.com/jsapi"></script>
 <script type="text/javascript" src="../js/dw/api.js"></script>
 
 </body>

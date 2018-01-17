@@ -70,6 +70,11 @@ catch(e){}
 // ]]>
 </script>
 <![endif]-->
+<style type="text/css">
+.header_con a:hover{
+  text-decoration: none;
+}
+</style>
 <script>
 var COOKIE_PRE = '<?php echo COOKIE_PRE;?>';var _CHARSET = '<?php echo strtolower(CHARSET);?>';var SITEURL = '<?php echo SHOP_SITE_URL;?>';var SHOP_SITE_URL = '<?php echo SHOP_SITE_URL;?>';var RESOURCE_SITE_URL = '<?php echo RESOURCE_SITE_URL;?>';var RESOURCE_SITE_URL = '<?php echo RESOURCE_SITE_URL;?>';var SHOP_TEMPLATES_URL = '<?php echo SHOP_TEMPLATES_URL;?>';
 </script>
@@ -177,12 +182,12 @@ $(function(){
             <a class="help_ sign" href="<?php echo urlShop('login','register');?>">注册</a>
             <div class="public-top-layout w"></div>
         <?php }?>
-       
-        <a class="help_" href="<?php echo urlShop('article', 'article', array('ac_id' => 2));?>" target="_blank">帮助中心</a>
-        <div class="city_">
+       <div class="city_">
         <?php echo $output['city_name'][city]?>
            
         </div>
+        <a class="help_" href="<?php echo urlShop('article', 'article', array('ac_id' => 2));?>" target="_blank">帮助中心</a>
+        
     </div>
 </div>
 
